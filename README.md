@@ -1,6 +1,6 @@
 # bdp
 
-(Birth-death process)[https://en.wikipedia.org/wiki/Birth%E2%80%93death_process]
+[Birth-death process](https://en.wikipedia.org/wiki/Birth%E2%80%93death_process)
 
 ### Install
 ```npm install bdp```
@@ -14,6 +14,17 @@ for(var i = 0;i < 4;++i) {
     console.log(model.probability(i));
 }
 ```
+
+### API:
+### bdp.BDP(lambdas, mus)
+#### lambdas
+list of birth rates.
+#### mus
+list of death rates.
+
+### probability(t)
+Return probability at the time t
+
 
 ### LICENCE
 MIT
