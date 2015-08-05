@@ -31,16 +31,13 @@ export class BDP {
         }
 
         let last_probability = start;
+        let result = 1;
+
         for(let i = 0;i < t;++i) {
-            let item = 1;
-            for(let j = 0;j <= i;++j) {
-                let tmp = (this.lambdas[j])/this.mus[j];
-                item *= tmp;
-            }
-            last_probability*=item;
+            result *= (this.lambdas[i]/this.mus[i]);
         }
 
-        return last_probability;
+        return result * last_probability;
     }
 }
 
