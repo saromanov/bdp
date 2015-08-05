@@ -3,6 +3,10 @@
 //
 export class BDP {
     constructor(lambdas, mus) {
+        if(!Array.isArray(lambdas) || !Array.isArray(mus)) {
+            throw "Input type must be as array";
+        }
+
         if(lambdas.length === 0 || mus.length === 0) {
             throw "One of parameters have a zero length";
         }
@@ -26,7 +30,6 @@ export class BDP {
             throw "t is greather then lambdas length";
         }
 
-        let result = 0;
         let last_probability = start;
         for(let i = 0;i < t;++i) {
             let item = 1;
