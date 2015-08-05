@@ -7,4 +7,6 @@ it('should return probability at the state n', function(){
     var bdpmodel = new bdp.BDP(lambda, mu);
     assert.equal(bdpmodel.probability(0), 0.2898550724637681);
     assert.equal(bdpmodel.probability(1), 0.36231884057971014);
+    assert.equal(bdpmodel.probability(2), 0.2898550724637681);
+    assert.equal(bdpmodel.probability(3), 0.05797101449275363);
 });
