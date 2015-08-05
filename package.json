@@ -19,13 +19,11 @@
   "dependencies": {
     "mathjs": "^1.7.0",
     "random-array": "0.0.2",
-    "underscore": "^1.8.3",
     "core-js": "^0.6.0"
   },
   "devDependencies": {
     "babel": "^4.6.0",
-    "mocha": "^2.2.5",
-    "underscore": "^1.8.3"
+    "mocha": "^2.2.5"
   },
   "author": "Sergey Romanov <xxsmotur@gmail.com> (https://github.com/saromanov)",
   "license": "MIT",
