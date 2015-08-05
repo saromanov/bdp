@@ -3,6 +3,10 @@
 //
 export class BDP {
     constructor(lambdas, mus) {
+        if(lambdas.length === 0 || mus.length === 0) {
+            throw "One of parameters have a zero length";
+        }
+
         if(lambdas.length !== mus.length){
             throw "Length of arrays is not equal";
         }
